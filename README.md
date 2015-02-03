@@ -15,6 +15,7 @@ Para Karma es necesario instalar:
 * `npm install karma-html2js-preprocessor --save-dev`
 * `npm install karma-chrome-launcher --save-dev`
 * `npm install karma-firefox-launcher --save-dev`
+* [karma html2js converter]([karma phantomJS launcher ](https://github.com/karma-runner/karma-phantomjs-launcher)
 
 En `karma.conf.js` tenemos que poner:
 
@@ -30,7 +31,14 @@ y
                     'tests/*.html': ['html2js']
               },
 
-para procesar `tests/test.html` y convertirlo a JavaScript.
+para procesar `tests/test.html` y convertirlo a JavaScript:
+
+          if (typeof __html__ !== 'undefined') { // Que sirva con y sin Karma
+
 Ejecución:
 
           ~/srcPLgrado/temperature(karma2)]$ node_modules/karma/bin/karma start
+
+You can pass list of browsers as a CLI argument too:
+
+          ~/srcPLgrado/temperature(karma2)]$ node_modules/karma/bin/$karma start --browsers PhantomJS
