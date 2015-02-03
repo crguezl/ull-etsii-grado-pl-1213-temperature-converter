@@ -3,9 +3,9 @@ function calculate() {
   var result;
   var temp = original.value;
   var regexp = /([-+]?\d+(?:\.\d*)?)\s*([fFcC])/;
-  
+
   var m = temp.match(regexp);
-  
+
   if (m) {
     var num = m[1];
     var type = m[2];
