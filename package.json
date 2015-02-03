@@ -1,0 +1,11 @@
+{
+
+  "dependencies": {
+    "karma": ">= 0.0.1",
+    "karma-mocha": ">=0.0.1",
+    "karma-html2js-preprocessor": ">=0.0.1",
+    "karma-chrome-launcher":   ">=0.0.1",
+    "karma-firefox-launcher":   ">=0.0.1",
+    "karma-phantomjs-launcher":   ">=0.0.1"
+  }
+}
