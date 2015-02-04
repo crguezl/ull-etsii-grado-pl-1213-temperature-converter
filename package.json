@@ -1,21 +1,22 @@
 {
   "dependencies": {
-    "karma": ">= 0.0.1",
-    "karma-mocha": ">=0.0.1",
-    "karma-html2js-preprocessor": ">=0.0.1",
-    "karma-chrome-launcher": ">=0.0.1",
-    "karma-firefox-launcher": ">=0.0.1",
-    "karma-phantomjs-launcher": ">=0.0.1"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*",
+    "karma": "*",
+    "karma-mocha": "*",
+    "karma-html2js-preprocessor": "*",
+    "karma-chrome-launcher": "*",
+    "karma-firefox-launcher": "*",
+    "karma-phantomjs-launcher": "*"
   },
   "name": "temperature",
-  "description": "ETSII ULL Grado de Informatica ==============================",
+  "description": "PL 1er Lab. ETSII ULL Grado de Informatica",
   "version": "1.0.0",
   "main": "temperature.js",
   "directories": {
     "test": "tests"
-  },
-  "devDependencies": {
-    "mocha": "^2.1.0"
   },
   "scripts": {
     "test": "mocha"
