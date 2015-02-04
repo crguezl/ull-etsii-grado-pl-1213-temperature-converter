@@ -1,6 +1,5 @@
 {
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "chai": "*",
     "mocha": "*",
@@ -9,7 +8,12 @@
     "karma-html2js-preprocessor": "*",
     "karma-chrome-launcher": "*",
     "karma-firefox-launcher": "*",
-    "karma-phantomjs-launcher": "*"
+    "karma-phantomjs-launcher": "*",
+    "gulp-util": "~3.0.3",
+    "gulp": "~3.8.10",
+    "gulp-concat": "~2.4.3",
+    "gulp-uglify": "~1.1.0",
+    "gulp-karma": "0.0.4"
   },
   "name": "temperature",
   "description": "PL 1er Lab. ETSII ULL Grado de Informatica",
