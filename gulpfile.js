@@ -3,12 +3,12 @@ var gulp    = require('gulp'),
     uglify  = require('gulp-uglify'),
     concat  = require('gulp-concat');
 var karma = require('gulp-karma');
+var del = require('del');
 
-gulp.task('js', function () {
-    gulp.src('./temperature.js ./global.css')
-        .pipe(uglify())
-        .pipe(concat('all.min.js'))
-        .pipe(gulp.dest('./minified/'));
+gulp.task('minify', function () {
+  gulp.src('temperature.js')
+  .pipe(uglify())
+  .pipe(gulp.dest('minified'));
 });
 
 
@@ -40,9 +40,9 @@ gulp.task('default', function() {
     }));
 });
 
-/ Not all tasks need to use streams
+// Not all tasks need to use streams
 // A gulpfile is just another node program and you can use all packages available on npm
 gulp.task('clean', function(cb) {
   // You can use multiple globbing patterns as you would with `gulp.src`
-  del(['build'], cb);
+  del(['minified/*'], cb);
 });
