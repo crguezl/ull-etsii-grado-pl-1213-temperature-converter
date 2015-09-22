@@ -3,6 +3,7 @@ var assert = chai.assert;
 suite('temperature', function() {
     setup(function(){
       if (typeof __html__ !== 'undefined') {
+          console.log(__html__);
           document.body.innerHTML = __html__['tests/test.html'];
           original = document.getElementById('original');
           converted = document.getElementById('converted');

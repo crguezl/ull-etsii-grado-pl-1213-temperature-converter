@@ -1,3 +1,4 @@
+// usando karma
 "use strict"; // Use ECMAScript 5 strict mode in browsers that support it
 function calculate() {
   var result;
