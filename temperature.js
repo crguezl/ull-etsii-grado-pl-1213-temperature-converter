@@ -18,9 +18,10 @@ function calculate() {
       result = (num - 32)*5/9;
       result = result.toFixed(1)+" Celsius"
     }
-    alert(result);
+    converted.innerHTML = result;
   }
   else {
-    alert("ERROR! Try something like '-4.2C' instead");
+    converted.innerHTML = "ERROR! Try something like '-4.2C' instead";
   }
+  return false;
 }
